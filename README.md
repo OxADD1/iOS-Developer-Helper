@@ -13,35 +13,45 @@ cd xcode-cleanup
 ./xcode_cleanup.sh
 ```
 
-## 📋 Requirements
+### 🤖 [AI-Prompt Tools](./AI-Prompt/)
+AI prompts and scripts for Swift development assistance.
 
-- **macOS**: 10.15+ 
-- **Xcode**: Any version
-- **Permissions**: Standard user permissions (no sudo required)
+**Usage:**
+```bash
+cd AI-Prompt
+# Use Developer Prompt.rtf with your AI assistant
+# Run collection script: ./collect_swift_individual.sh
+```
+
 
 ## 🚀 Quick Start
 
 ```bash
 # Clone repository
-git clone https://github.com/yourusername/ios-developer-helper.git
-cd ios-developer-helper
+git clone git@github.com:OxADD1/iOS-Developer-Helper.git
+cd iOS-Developer-Helper
 
 # Use Xcode cleanup tool
 cd xcode-cleanup
 chmod +x xcode_cleanup.sh
 ./xcode_cleanup.sh
+
+# Or use AI-Prompt tools
+cd ../AI-Prompt
+chmod +x collect_swift_individual.sh
+./collect_swift_individual.sh
 ```
 
 ## 📂 Repository Structure
 
 ```
-ios-developer-helper/
+iOS-Developer-Helper/
 ├── README.md
-└── xcode-cleanup/           # Xcode cache cleanup tool
+├── xcode-cleanup/           # Xcode cache cleanup tool
+│   ├── README.md
+│   └── xcode_cleanup.sh
+└── AI-Prompt/              # AI development assistance tools
     ├── README.md
-    └── xcode_cleanup.sh
+    ├── Developer Prompt.txt
+    └── collect_swift_individual.sh
 ```
-
-## 📄 License
-
-MIT License - see [LICENSE](LICENSE) file for details.
